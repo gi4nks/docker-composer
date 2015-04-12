@@ -1,0 +1,8 @@
+stash:
+  image: atlassian/stash
+  name: stash
+  ports:
+    - "7990:7990"
+    - "7999:7999"
+  volumes:
+    - /data/stash:/var/atlassian/application-data/stash
