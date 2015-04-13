@@ -11,6 +11,6 @@ Some docker-composer configuration files for applications
 ## Gitlab Community edition
 - Folder: **gitlab**
 - Docker Image: **sameersbn/gitlab:latest**
-- Command: **docker compose up**
+- Command: **docker-compose up**
 - Web site: [http://www.damagehead.com/docker-gitlab/](http://www.damagehead.com/docker-gitlab/)
 
