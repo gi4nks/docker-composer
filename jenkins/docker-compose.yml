@@ -1,0 +1,7 @@
+jenkins:
+  image: gi4nks/docker-jenkinsci-android
+  ports:
+    - "8080:8080"
+  volumes:
+    - /home/gi4nks/Projects/jenkins-repositories:/var/jenkins_home 
+    - /home/gi4nks/Android/Sdk:/usr/share/Android/Sdk
