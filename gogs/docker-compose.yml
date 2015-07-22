@@ -1,0 +1,7 @@
+gogs:
+  image: codeskyblue/docker-gogs
+  ports: 
+    - "10022:22" 
+    - "10090:3000"
+  volumes:
+    - /home/gianluca/Projects/gogs-repositories:/data   

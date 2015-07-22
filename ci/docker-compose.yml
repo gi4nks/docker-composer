@@ -1,0 +1,25 @@
+dockerui:
+  image: dockerui/dockerui
+  volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+  ports:
+   - "9000:9000"
+artifactory:
+  image: jfrog-docker-registry.bintray.io/artifactory/artifactory-oss:latest
+  ports:
+   - "8081:8081"
+   - "80:80"
+gogs:
+  image: codeskyblue/docker-gogs
+  ports: 
+    - "10022:22" 
+    - "10090:3000"
+  volumes:
+    - /home/gianluca/Projects/gogs-repositories:/data   
+jenkins:
+  image: gi4nks/docker-jenkinsci-android
+  ports:
+    - "8080:8080"
+  volumes:
+    - /home/gianluca/Projects/jenkins-repositories:/var/jenkins_home 
+    - /home/gianluca/Android/Sdk:/usr/share/Android/Sdk

@@ -1,0 +1,8 @@
+
+docker run --name dockerui -d -p 9000:9000 --privileged -v /var/run/docker.sock:/var/run/docker.sock dockerui/dockerui
+docker run --name=jenkins -d -p 8080:8080 -v /home/gianluca/Projects/jenkins-repositories:/var/jenkins_home -v /home/gianluca/Android/Sdk:/usr/share/Android/Sdk gi4nks/docker-jenkinsci-android
+
+docker run --name=gogs -d -p 10022:22 -p 10090:3000 -v /home/gianluca/Projects/gogs-repositories:/data codeskyblue/docker-gogs
+
+
+docker run --name artifactory -p 8081:8081 -p 80:80 jfrog-docker-registry.bintray.io/artifactory/artifactory-oss:latest
