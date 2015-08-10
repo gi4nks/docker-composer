@@ -1,0 +1,6 @@
+dockerui:
+  image: tobegit3hub/seagull
+  volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+  ports:
+   - "127.0.0.1:10086:10086"
