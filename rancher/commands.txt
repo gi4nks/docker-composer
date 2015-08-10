@@ -1,0 +1,15 @@
+Rancher
+
+docker run -d --restart=always -p 8080:8080 rancher/server
+docker run -e CATTLE_AGENT_IT=172.26.109.16 -d --privileged -v /var/run/docker.sock:/var/run/docker.sock rancher/agent:v0.7.11 http://172.26.109.16:8080/v1/scripts/86AF95E74B44BE9B0030:1438938000000:60JvCSUoQYonPvnRhkqXB4DpY
+
+
+
+
+
+docker run -e CATTLE_AGENT_IT=172.26.109.16 -d --privileged -v /var/run/docker.sock:/var/run/docker.sock rancher/agent:v0.7.11 http://172.26.109.16:8080/v1/scripts/1BB7E4E8C04B2BD8BDA0:1438948800000:kjB56SQwEp1IfvYm1C3RktgTY
+
+
+
+
+docker run -e CATTLE_AGENT_IT=172.26.109.16 -d --privileged -v /var/run/docker.sock:/var/run/docker.sock rancher/agent:v0.7.11 http://172.26.109.16:8080/v1/scripts/F1DD90BA6153AB95A348:1439182800000:QBSuOay8SZ5WDcLcUgv95Zh1tc
