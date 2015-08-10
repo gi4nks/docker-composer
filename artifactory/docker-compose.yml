@@ -1,5 +1,10 @@
 artifactory:
-  image: jfrog-docker-registry.bintray.io/artifactory/artifactory-oss:latest
+  image: mattgruter/artifactory
   ports:
-   - "8081:8081"
+   - "8080:8080"
    - "80:80"
+  volumes:
+    - /home/gianluca/Projects/artifactory-repositories/data:/artifactory/data
+    - /home/gianluca/Projects/artifactory-repositories/logs:/artifactory/logs
+    - /home/gianluca/Projects/artifactory-repositories/backup:/artifactory/backup
+  

@@ -1,0 +1,8 @@
+subversion:
+  image: erikxiv/subversion
+  environment:
+    - SVN_REPONAME=repos
+  ports:
+    - "3690:3690"
+  volumes:
+    - /home/gianluca/Projects/svn-repositories:/var/svn

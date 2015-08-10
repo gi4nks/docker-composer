@@ -9,6 +9,12 @@ artifactory:
   ports:
    - "8081:8081"
    - "80:80"
+  environment:
+    - ARTIFACTORY_HOME=/home/gianluca/Projects/artifactory-repositories
+  volumes:
+    - $ARTIFACTORY_HOME/data
+    - $ARTIFACTORY_HOME/logs
+    - $ARTIFACTORY_HOME/backup
 gogs:
   image: codeskyblue/docker-gogs
   ports: 
