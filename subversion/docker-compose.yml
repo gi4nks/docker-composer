@@ -5,4 +5,4 @@ subversion:
   ports:
     - "3690:3690"
   volumes:
-    - /home/gi4nks/Projects/svn-repositories:/var/svn
+    - ${HOME}/Projects/svn-repositories:/var/svn

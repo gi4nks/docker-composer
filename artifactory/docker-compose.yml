@@ -4,7 +4,7 @@ artifactory:
    - "8080:8080"
    - "80:80"
   volumes:
-    - /home/gi4nks/Projects/artifactory-repositories/data:/artifactory/data
-    - /home/gi4nks/Projects/artifactory-repositories/logs:/artifactory/logs
-    - /home/gi4nks/Projects/artifactory-repositories/backup:/artifactory/backup
-  
+    - ${HOME}/Projects/artifactory-repositories/data:/artifactory/data
+    - ${HOME}/Projects/artifactory-repositories/logs:/artifactory/logs
+    - ${HOME}/Projects/artifactory-repositories/backup:/artifactory/backup
+

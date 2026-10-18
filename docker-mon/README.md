@@ -4,5 +4,5 @@
 
 or create an alias like 
 
-> alias mon="docker-compose -f /home/gi4nks/Apps/docker-composer/docker-mon/docker-compose.yml run dockermon"
+> alias mon="docker-compose -f ${HOME}/Apps/docker-composer/docker-mon/docker-compose.yml run dockermon"
 

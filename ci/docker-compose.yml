@@ -10,22 +10,22 @@ artifactory:
    - "8081:8081"
    - "80:80"
   environment:
-    - ARTIFACTORY_HOME=/home/gi4nks/Projects/artifactory-repositories
+    - ARTIFACTORY_HOME=${HOME}/Projects/artifactory-repositories
   volumes:
     - $ARTIFACTORY_HOME/data
     - $ARTIFACTORY_HOME/logs
     - $ARTIFACTORY_HOME/backup
 gogs:
   image: codeskyblue/docker-gogs
-  ports: 
-    - "10022:22" 
+  ports:
+    - "10022:22"
     - "10090:3000"
   volumes:
-    - /home/gi4nks/Projects/gogs-repositories:/data   
+    - ${HOME}/Projects/gogs-repositories:/data
 jenkins:
   image: gi4nks/docker-jenkinsci-android
   ports:
     - "8080:8080"
   volumes:
-    - /home/gi4nks/Projects/jenkins-repositories:/var/jenkins_home 
-    - /home/gi4nks/Android/Sdk:/usr/share/Android/Sdk
+    - ${HOME}/Projects/jenkins-repositories:/var/jenkins_home
+    - ${HOME}/Android/Sdk:/usr/share/Android/Sdk
